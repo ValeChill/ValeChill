@@ -1,0 +1,38 @@
+print('HELLO THERE!! LETS PLAY SOME ROCK PAPER SCISSORS')
+print('1)✊Rock')
+print('2)✋Paper')
+print('3)✌Scissors')
+import random
+player = int(input('Go on, pick a number: '))
+computer = random.randint(1,3)
+if player==computer : 
+    print('Its a tie...')
+elif player == 1 :
+    if computer == 2 :
+        print('You chose:✊')
+        print('I chose:✋')      
+        print('Sorry, I won!!')
+    else : 
+        print('You chose:✊') 
+        print('I chose:✌️')
+        print('Congratulations, you won!!')
+elif player == 2 :
+    if computer == 1 :
+        print('You chose:✋')
+        print('I chose:✊')
+        print('You won! Damn, you are good at this game!!')
+    else :
+        print('You chose:✋')
+        print('I chose:✌️')
+        print('I won!')
+elif player == 3 :
+    if computer == 1 :
+        print('You chose:✌️')
+        print('I chose:✊')
+        print('You lost, I won!')
+    else :
+        print('You chose:✌️')
+        print('I chose:✋')
+        print('You win! Congrats!')
+else : print('You have to choose a number between 1 and 3')
+        
